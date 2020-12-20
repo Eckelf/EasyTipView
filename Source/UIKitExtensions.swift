@@ -7,6 +7,8 @@
 //
 
 import Foundation
+#if canImport(UIKit)
+import UIKit
 
 // MARK: - UIBarItem extension -
 
@@ -94,3 +96,4 @@ extension CGRect {
         return CGPoint(x: self.x + self.width / 2, y: self.y + self.height / 2)
     }
 }
+#endif
